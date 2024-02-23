@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flipkart AR Try-On</title>
+</head>
+
+<body>
+    <!-- Include your wireframes here using HTML structure -->
+    <div class="product-page">
+        <h1>Product Name</h1>
+        <p>Description and details about the product.</p>
+        <button id="ar-try-on-btn" onclick="activateAR()">Try On in AR</button>
+    </div>
+
+    <div id="ar-interface" class="hidden">
+        <h2>AR Try-On</h2>
+        <div id="ar-camera-preview"></div>
+        <div id="virtual-products"></div>
+        <div id="ar-controls">
+            <button onclick="adjustPlacement()">Adjust Placement</button>
+            <button onclick="adjustScale()">Adjust Scale</button>
+            <button onclick="adjustOrientation()">Adjust Orientation</button>
+        </div>
+        <button onclick="completeARTryOn()">Add to Cart</button>
+    </div>
+
+    <script src="ar-functions.js"></script>
+</body>
+
+</html>
